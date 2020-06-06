@@ -14,7 +14,7 @@ export class Ex6Component implements OnInit {
   ngOnInit(): void {
   }
 
-  mudarTexto(textoNovo: string): void {
+  textoMudar(textoNovo: string): void {
 
     this.texto = textoNovo;
   }

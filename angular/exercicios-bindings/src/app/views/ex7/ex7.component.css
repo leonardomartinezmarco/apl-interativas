@@ -1,14 +1,14 @@
 div {
   width: 200px;
   height: 200px;
-  font-size: 36px;
-  border: 2px solid black;
+  font-size: 50px;
+  border: 2px solid red;
 }
 
-.ver{
+.ver_div{
 display: block;
 }
 
-.esconder{
+.esconder_div{
   display: none;
   }

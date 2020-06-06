@@ -1,0 +1,52 @@
+<h1>{{title}} - main component</h1>
+
+<input type="button" value="Exemplo" (click)="exibirComponente('exemplo')">
+<input type="button" value="Ex1" (click)="exibirComponente('ex1')">
+<input type="button" value="Ex2" (click)="exibirComponente('ex2')">
+<input type="button" value="Ex3" (click)="exibirComponente('ex3')">
+<input type="button" value="Ex4" (click)="exibirComponente('ex4')">
+<input type="button" value="Ex5" (click)="exibirComponente('ex5')">
+<input type="button" value="Ex6" (click)="exibirComponente('ex6')">
+<input type="button" value="Ex7" (click)="exibirComponente('ex7')">
+<input type="button" value="Ex8" (click)="exibirComponente('ex8')">
+<input type="button" value="Ex9" (click)="exibirComponente('ex9')">
+<input type="button" value="Ex10" (click)="exibirComponente('ex10')">
+<input type="button" value="Ex11" (click)="exibirComponente('ex11')">
+<input type="button" value="Ex12" (click)="exibirComponente('ex12')">
+<input type="button" value="Ex13" (click)="exibirComponente('ex13')">
+<input type="button" value="Ex14" (click)="exibirComponente('ex14')">
+<input type="button" value="Ex15" (click)="exibirComponente('ex15')">
+<input type="button" value="Ex16" (click)="exibirComponente('ex16')">
+<input type="button" value="Ex17" (click)="exibirComponente('ex17')">
+<input type="button" value="Ex18" (click)="exibirComponente('ex18')">
+<input type="button" value="Ex19" (click)="exibirComponente('ex19')">
+<input type="button" value="Ex20" (click)="exibirComponente('ex20')">
+
+<!-- Usando ngIF -->
+<app-exemplo01 *ngIf="componenteAtual === 'exemplo'"></app-exemplo01>
+<app-ex1 *ngIf="componenteAtual === 'ex1'"></app-ex1>
+<app-ex2 *ngIf="componenteAtual === 'ex2'"></app-ex2>
+<app-ex3 *ngIf="componenteAtual === 'ex3'"></app-ex3>
+<app-ex4 *ngIf="componenteAtual === 'ex4'"></app-ex4>
+<app-ex5 *ngIf="componenteAtual === 'ex5'"></app-ex5>
+<app-ex6 *ngIf="componenteAtual === 'ex6'"></app-ex6>
+<app-ex7 *ngIf="componenteAtual === 'ex7'"></app-ex7>
+<app-ex8 *ngIf="componenteAtual === 'ex8'"></app-ex8>
+<app-ex9 *ngIf="componenteAtual === 'ex9'"></app-ex9>
+<app-ex10 *ngIf="componenteAtual === 'ex10'"></app-ex10>
+<app-ex11 *ngIf="componenteAtual === 'ex11'"></app-ex11>
+<app-ex12 *ngIf="componenteAtual === 'ex12'"></app-ex12>
+<app-ex13 *ngIf="componenteAtual === 'ex13'"></app-ex13>
+
+<!-- Usando ngSwitch -->
+<div [ngSwitch] ="componenteAtual">
+  <app-ex14 *ngSwitchCase = " 'ex14' "></app-ex14>
+  <app-ex15 *ngSwitchCase = " 'ex15' "></app-ex15>
+  <app-ex16 *ngSwitchCase = " 'ex16' "></app-ex16>
+  <app-ex17 *ngSwitchCase = " 'ex17' "></app-ex17>
+  <app-ex18 *ngSwitchCase = " 'ex18' "></app-ex18>
+  <app-ex19 *ngSwitchCase = " 'ex19' "></app-ex19>
+  <app-ex20 *ngSwitchCase = " 'ex20' "></app-ex20>
+</div>
+
+<app-sobre></app-sobre>

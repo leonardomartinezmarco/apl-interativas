@@ -1,28 +1,23 @@
-.caixa
-{
-  width: 300px;
-  border: 1px;
+.selecao {
+  width: 450px;
+  border: 5px;
   border-style: solid
 }
 
-.div_tam
-{
-  width: 250px;
+.div_tamanho {
+  width: 256px;
 
 }
 
-.imagem
-{
+.img {
   width: 200px;
   height: 200px;
 }
 
-.mt
-{
-  margin-top: 30px;
+.mr {
+  margin-top: 13px;
 }
 
-.centertext
-{
+.center {
   text-align: center
 }

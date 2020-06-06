@@ -7,8 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class Ex8Component implements OnInit {
 
-  valor1 = 0;
-  valor2 = 0;
+  value1 = 0;
+  value2 = 0;
 
   constructor() { }
 

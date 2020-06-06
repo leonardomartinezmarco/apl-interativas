@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class Ex9Component implements OnInit {
 
   nome = '';
-  nome_exibir = 'Digite o nome de uma raça de cachorro!';
+  exibirNome = 'Digite o nome de uma raça de cachorro!';
   imagem = '\\assets\\ex9\\vazio.jpg';
 
   constructor() { }
@@ -16,37 +16,25 @@ export class Ex9Component implements OnInit {
   ngOnInit(): void {
   }
 
-  trocarImagem(): void
-  {
+  imagemTrocar(): void {
 
-    let raca = this.nome.toUpperCase();
+    let racaCachorro = this.nome.toUpperCase();
 
-    if (raca === 'DALMATA')
-    {
-      this.nome_exibir = 'Dalmata.';
-      this.imagem = '\\assets\\ex9\\dalmata.jpg';
+    if (racaCachorro === 'Rottweiler') {
+      this.exibirNome = 'Rottweiler.';
+      this.imagem = '\\assets\\ex9\\rottweiler.jpg';
+    } else if (racaCachorro === 'Pitbull') {
+      this.exibirNome = 'Pitbull.';
+      this.imagem = '\\assets\\ex9\\pitbull.jpg';
+    } else if (racaCachorro === 'Labrador') {
+      this.exibirNome = 'Labrador.';
+      this.imagem = '\\assets\\ex9\\labrador.jpg';
+    } else if (racaCachorro === '') {
+      this.exibirNome = 'Digite nome de uma raça de cachorro!';
+      this.imagem = '\\assets\\ex9\\vazio.jpg';
+    } else{
+      this.exibirNome = 'Não encontrado!';
+      this.imagem = '\\assets\\ex9\\errado.png';
     }
-      else if ( raca === 'PITBULL' )
-      {
-        this.nome_exibir = 'Pitbull.';
-        this.imagem = '\\assets\\ex9\\pitbull.jpg';
-      }
-        else if ( raca === 'LABRADOR')
-        {
-          this.nome_exibir = 'Labrador.';
-          this.imagem = '\\assets\\ex9\\labrador.jpg';
-        }
-          else if ( raca === '')
-          {
-            this.nome_exibir = 'Digite o nome de uma raça de cachorro!';
-            this.imagem = '\\assets\\ex9\\vazio.jpg';
-          }
-            else
-            {
-              this.nome_exibir = 'Raça de cachorro não encontrada!';
-              this.imagem = '\\assets\\ex9\\errado.png';
-            }
-
   }
-
 }

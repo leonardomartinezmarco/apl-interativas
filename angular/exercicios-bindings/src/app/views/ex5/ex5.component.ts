@@ -7,19 +7,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class Ex5Component implements OnInit {
 
-  imgTrocar = '\\assets\\ex5\\image1.jpg';
+  trocarImg = '\\assets\\ex5\\img1.jpg';
 
   constructor() { }
 
   ngOnInit(): void {
   }
 
-  trocarImagem(): void {
+  imagemTrocar(): void {
 
-    if (this.imgTrocar === '\\assets\\ex5\\image1.jpg') {
-      this.imgTrocar = '\\assets\\ex5\\image2.jpg';
+    if (this.trocarImg === '\\assets\\ex5\\img1.jpg') {
+      this.trocarImg = '\\assets\\ex5\\img2.jpg';
     } else {
-      this.imgTrocar = '\\assets\\ex5\\image1.jpg'; }
+      this.trocarImg = '\\assets\\ex5\\img1.jpg'; }
   }
 
 }

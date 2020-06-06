@@ -7,52 +7,44 @@ import { Component, OnInit } from '@angular/core';
 })
 export class Ex11Component implements OnInit {
 
-  valor1: number;
-  valor2: number;
-
-  resultado: number;
+  value1: number;
+  value2: number;
+  result: number;
 
   constructor() { }
 
   ngOnInit(): void {
   }
 
-  operacao(op: String): void
-  {
+  operacaoNum(op: String): void {
 
-    let tempValor: number = 0;
+    let tempoValor: number = 0;
 
-    switch (op)
-    {
-      case 'soma':
-        tempValor = this.valor1 + this.valor2;
+    switch (op) {
+      case 'somar':
+        tempoValor = this.value1 + this.value2;
         break;
 
-      case 'sub':
-        tempValor = this.valor1 - this.valor2;
+      case 'subtrair':
+        tempoValor = this.value1 - this.value2;
         break;
 
-      case 'mult':
-        tempValor = this.valor1 * this.valor2;
+      case 'multiplicar':
+        tempoValor = this.value1 * this.value2;
         break;
 
-      case 'div':
-        if (this.valor2 === 0)
-        {
-          tempValor = 0;
-        }
-        else
-        {
-          tempValor = this.valor1 / this.valor2;
+      case 'dividir':
+        if (this.value2 === 0) {
+          tempoValor = 0;
+        } else {
+          tempoValor = this.value1 / this.value2;
         }
         break;
-
-      default:
-        tempValor = 0;
+      
+        default:
+        tempoValor = 0;
         break;
     }
-
-    this.resultado = tempValor;
+    this.result = tempoValor;
   }
-
 }

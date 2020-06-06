@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class Ex10Component implements OnInit {
 
-  nome: String;
+  nomeCurso: String;
   curso:String;
 
   constructor() { }

@@ -7,34 +7,34 @@ import { Component, OnInit } from '@angular/core';
 })
 export class Ex7Component implements OnInit {
 
-  div1 = 'ver';
-  div2 = 'esconder';
-  div3 = 'esconder';
+  div1 = 'ver_div';
+  div2 = 'esconder_div';
+  div3 = 'esconder_div';
 
   constructor() { }
 
   ngOnInit(): void {
   }
 
-  botao1(): void {
+  button1(): void {
 
-    this.div1 = 'ver';
-    this.div2 = 'esconder';
-    this.div3 = 'esconder';
+    this.div1 = 'ver_div';
+    this.div2 = 'esconder_div';
+    this.div3 = 'esconder_div';
   }
 
-  botao2(): void {
+  button2(): void {
 
-    this.div1 = 'esconder';
-    this.div2 = 'ver';
-    this.div3 = 'esconder';
+    this.div1 = 'esconder_div';
+    this.div2 = 'ver_div';
+    this.div3 = 'esconder_div';
   }
 
-  botao3(): void {
+  button3(): void {
 
-    this.div1 = 'esconder';
-    this.div2 = 'esconder';
-    this.div3 = 'ver';
+    this.div1 = 'esconder_div';
+    this.div2 = 'esconder_div';
+    this.div3 = 'ver_div';
   }
 
 }
