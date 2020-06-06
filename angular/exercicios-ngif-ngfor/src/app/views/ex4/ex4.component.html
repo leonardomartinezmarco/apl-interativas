@@ -1,6 +1,13 @@
-<h2>Ex4:</h2>
-<!-- src direto para testar o caminho da imagem -->
-<!-- <img src="\assets\ex4\image1.jpg" alt=""> -->
-<img [src]="img1" [class] = "classCSSTamanho" alt="">
-<img [src]="img2" [class] = "classCSSBordaMargin" alt="">
-<img [src]="img3" [class] = "classCSSBordaMargin" alt="">
+<h2>Exercicio 4:</h2>
+<input type="number" [(ngModel)]="value1">
+<input type="number" [(ngModel)]="value2">
+
+<div *ngIf="value1 && value2">
+  <input type="button" value="+" (click) = "operacaoNum('somar')">
+  <input type="button" value="-" (click) = "operacaoNum('subtrair')">
+  <input type="button" value="*" (click) = "operacaoNum('multiplicar')">
+  <input type="button" value="/" (click) = "operacaoNum('dividir')">
+  <p>Result: {{result}}</p>
+</div>
+
+

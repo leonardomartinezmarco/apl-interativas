@@ -7,34 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class Ex7Component implements OnInit {
 
-  div1 = 'ver';
-  div2 = 'esconder';
-  div3 = 'esconder';
+  titulos = ['titulo 1', 'titulo 2', 'titulo 3'];
+  conteudos = ['conteudo 1', 'conteudo 2', 'conteudo 3'];
 
   constructor() { }
 
   ngOnInit(): void {
   }
-
-  botao1(): void {
-
-    this.div1 = 'ver';
-    this.div2 = 'esconder';
-    this.div3 = 'esconder';
-  }
-
-  botao2(): void {
-
-    this.div1 = 'esconder';
-    this.div2 = 'ver';
-    this.div3 = 'esconder';
-  }
-
-  botao3(): void {
-
-    this.div1 = 'esconder';
-    this.div2 = 'esconder';
-    this.div3 = 'ver';
-  }
-
 }
+

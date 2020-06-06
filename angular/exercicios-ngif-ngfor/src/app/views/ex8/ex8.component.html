@@ -1,4 +1,6 @@
-<h2>Ex8</h2>
-<input type="number" [(ngModel)] = "valor1">
-<input type="number" [(ngModel)] = "valor2">
-<p>Resultado: {{valor1 + valor2}}</p>
+<h2>Exercicio 8:</h2>
+<input type="text" [(ngModel)]="nome">
+<input type="button" value="Adicionar" (click) = 'lista()'>
+<ol>
+  <li *ngFor="let nomeAtual of nomes; let i = index;">{{nomeAtual}}</li>
+</ol>

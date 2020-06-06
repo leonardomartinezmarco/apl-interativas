@@ -1,4 +1,8 @@
-.tamanho{
-  height: 400px;
-  width: 400px;
+.img {
+  width: 200px;
+  height: 200px;
+}
+
+.mr {
+  margin-top: 30px;
 }

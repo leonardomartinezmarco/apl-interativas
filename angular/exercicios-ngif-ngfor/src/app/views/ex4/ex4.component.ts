@@ -7,23 +7,46 @@ import { Component, OnInit } from '@angular/core';
 })
 export class Ex4Component implements OnInit {
 
-  // As Duas formas de utilizas as barras de acesso aos diretórios
-
-  // Forma 1 utilizando escape (somente uma barra é escape e não funciona)
-  img1 = '\\assets\\ex4\\image1.jpg';
-
-  // Forma 2
-  img2 = '/assets/ex4/image2.jpg';
-
-  // Novamente a forma 1
-  img3 = '\\assets\\ex4\\image3.jpg';
-
-  classCSSTamanho     = 'imagemTamanho';
-  classCSSBordaMargin = 'imagemBorda imagemMargin';
+  value1: number;
+  value2: number;
+  result: number;
 
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  operacaoNum(op: String): void {
+
+    let tempoValor: number = 0;
+
+    switch (op) {
+      case 'somar':
+        tempoValor = this.value1 + this.value2;
+        break;
+
+      case 'subtrair':
+        tempoValor = this.value1 - this.value2;
+        break;
+
+      case 'multiplicar':
+        tempoValor = this.value1 * this.value2;
+        break;
+
+      case 'dividir':
+        if (this.value2 === 0) {
+          tempoValor = 0;
+        } else {
+          tempoValor = this.value1 / this.value2;
+        }
+        break;
+
+        default:
+          tempoValor = 0;
+        break;
+    }
+
+    this.result = tempoValor;
   }
 
 }

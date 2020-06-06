@@ -1,6 +1,5 @@
-<h2>Ex5:</h2>
-<img [src]="imgTrocar" class='tamanho' alt="imagem aletória">
-<div>
-  <input type="button" (click) = "trocarImagem()" value="Trocar imagem">
+<h2>Exercicio 5:</h2>
+<div *ngFor="let imagem of imagens; let i = index;">
+  <img class="mr img" src="{{imagem}}" alt="imagem" (click) = "exibir(imagens[i])">
 </div>
 

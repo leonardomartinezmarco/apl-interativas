@@ -7,13 +7,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class Ex2Component implements OnInit {
 
+  value: number = 0;
+
   constructor() { }
 
   ngOnInit(): void {
-  }
-
-  upper(param1: string): string {
-    return param1.toUpperCase();
   }
 
 }

@@ -7,12 +7,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class Ex8Component implements OnInit {
 
-  valor1 = 0;
-  valor2 = 0;
+  nomes = [];
+  nome: String = '';
 
   constructor() { }
 
   ngOnInit(): void {
   }
 
+  lista(): void {
+    if (this.nome.length > 0) {
+      this.nomes.push(this.nome);
+      this.nome = '';
+    } else {
+      alert('Preencha o campo, por favor!');
+    }
+  }
 }

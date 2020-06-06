@@ -1,2 +1,10 @@
-<h2>Ex3:</h2>
-<h1 class="{{classepetroleo}}" > {{ uper('Petrobrás') }} </h1>
+<h2>Exercicio 3:</h2>
+<div>
+  <select [(ngModel)]="tipagem">
+    <option value="whatszap">Whatsapp</option>
+    <option value="email">E-mail</option>
+  </select>
+</div>
+
+<input *ngIf = "tipagem === 'whatszap' " type="text" placeholder="11-96340-8074">
+<input *ngIf = "tipagem === 'email' " type="email" placeholder="leonardomartinez.com.br">

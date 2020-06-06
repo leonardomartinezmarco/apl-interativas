@@ -7,15 +7,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class Ex3Component implements OnInit {
 
-  classepetroleo = 'petroleo';
+  tipagem: string = '';
 
   constructor() { }
 
   ngOnInit(): void {
-  }
-
-  uper(param1: string): string {
-    return param1.toUpperCase();
   }
 
 }

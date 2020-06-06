@@ -7,17 +7,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class Ex1Component implements OnInit {
 
-  nome = 'Emerson';
-  sobrenome = 'Costa';
+  value: number = 0;
 
   constructor() { }
 
   ngOnInit(): void {
   }
-
-  teste(param1: string): string {
-    return 'Teste ' + param1;
-  }
-
-
 }

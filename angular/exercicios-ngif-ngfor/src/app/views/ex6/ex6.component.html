@@ -1,7 +1,5 @@
-<h2>Ex6</h2>
-<p>Texto {{texto}}</p>
-<div>
-  <input type="button" value="Botão 1" (click) = "mudarTexto('TEXTO 1')">
-  <input type="button" value="Botão 2" (click) = "mudarTexto('TEXTO 2')">
-  <input type="button" value="Botão 3" (click) = "mudarTexto('TEXTO 3')">
-</div>
+<h2>Exercicio 6:</h2>
+<ul>
+  <li *ngFor="let pais of paises; let i = index;" (click) = "capital(pais.substr( pais.indexOf(':')+1,pais.length))" >{{ pais.substr( 0, pais.indexOf(':')) }}</li>
+</ul>
+

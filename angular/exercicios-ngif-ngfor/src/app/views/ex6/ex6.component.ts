@@ -7,16 +7,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class Ex6Component implements OnInit {
 
-  texto = '';
-
+  paises = ['Brasil:Brasilia','Peru:Lima','Australia:Camberra','Chile:Santiago']
   constructor() { }
 
   ngOnInit(): void {
   }
 
-  mudarTexto(textoNovo: string): void {
-
-    this.texto = textoNovo;
+  capital(capital: string): void {
+    alert(capital);
   }
-
 }
