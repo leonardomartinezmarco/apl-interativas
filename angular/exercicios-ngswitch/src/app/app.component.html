@@ -1,0 +1,10 @@
+<h1>{{title}} - main component</h1>
+
+<input type="button" value="Ex1" (click)="exibirComponente('ex1')">
+
+<!-- ngSwitch -->
+<div [ngSwitch] ="componenteAtual">
+  <app-ex1 *ngSwitchCase = "'ex1'"></app-ex1>
+</div>
+
+<app-sobre></app-sobre>

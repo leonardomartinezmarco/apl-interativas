@@ -1,0 +1,10 @@
+<h2>Exercicio 1:</h2>
+
+<input type="text" [(ngModel)]="nomeUser">
+<ul [ngSwitch] = "nomeUser">
+  <li *ngSwitchCase = " 'Coisa de Nerd'"> <a href="https://www.youtube.com/user/coisadenerd">Coisa de Nerd</a></li>
+  <li *ngSwitchCase = " 'Cade a chave' "><a href="https://www.youtube.com/user/cadeachave">Cade a Chave</a></li>
+  <li *ngSwitchCase = " 'Republica coisa de nerd' "><a href="https://www.youtube.com/channel/UChmOR1T5ZNnbRUba3lHRTOg">Republica Coisa de Nerd</a></li>
+  <li *ngSwitchDefault> <a href="https://www.youtube.com">Não encontrado</a></li>
+</ul>
+
