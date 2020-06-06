@@ -1,0 +1,19 @@
+<h3>Games Elite</h3>
+
+<ul>
+    <li *ngFor="let jogo of jogos" (click)="selecionarJogo(jogo);">
+        <span>{{jogo.name}} | {{jogo.platform}}</span>
+        <button (click)="delete(jogo);">X</button>
+    </li>
+</ul>
+
+<div *ngIf="jogo">
+    <span for="name">Nome do Jogo:</span><input type="text" name="name" placeholder="Informe o nome do jogo" [(ngModel)]="jogo.name"><hr>
+    <span for="product">Produtora do Jogo:</span><input type="text" name="product" placeholder="Infornme a produtora do jogo" [(ngModel)]="jogo.product"><hr>
+    <span for="platform">Plataforma do Jogo:</span><input type="text" name="platform" placeholder="Informe a plataforma do jogo" [(ngModel)]="jogo.platform"><hr>
+    <span for="genero">Genero do Jogo:</span><input type="text" name="genero" placeholder="informe o genero do jogo" [(ngModel)]="jogo.genero"><br>
+
+    <button (click)="save()">Criar</button>
+    <button (click)="cancel()">Voltar</button>
+</div>
+<button *ngIf="!jogo" (click)="create()">Novo</button>

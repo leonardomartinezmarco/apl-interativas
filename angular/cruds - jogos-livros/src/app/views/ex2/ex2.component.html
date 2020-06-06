@@ -1,0 +1,32 @@
+
+<h3>Livraria Roda Livros</h3>
+
+<input type="text" [(ngModel)]="search" placeholder="Procurar livro">
+<button *ngIf="search" (click)="search_procurar(search);">Procurar livro</button>
+
+<div *ngIf="return_search">
+    <li>Seu nome: {{retornoPesquisa.name}}</li>
+    <li>Autor do livro: {{retornoPesquisa.author}}</li>
+    <li>Categoria do livro: {{retornoPesquisa.category}}</li>
+    <li>Status do livro: {{retornoPesquisa.status}}</li>
+    <li>Editora dop livro: {{retornoPesquisa.edit}}</li>
+</div>
+<div *ngIf="warning">
+    <h2>{{warning}}</h2>
+</div>
+<ul>
+    <li *ngFor="let livro of livros" (click)="livroselecionar(livro);">
+        <span>{{livro.nome}} | {{livro.autor}}</span>
+        <button (click)="delete(livro);">X</button>
+    </li>
+</ul>
+<div *ngIf="livro">
+    <input for="name">Nome do livro: </input><input type="text" name="name" placeholder="Informe o nome do livro" [(ngModel)]="livro.name"><hr>
+    <input for="author">Autor do livro: </input><input type="text" name="author" placeholder="Informe o autor" [(ngModel)]="livro.author"><hr>
+    <input for="category">Categoria do livro: </input><input type="text" name="category" placeholder="Informe a categoria" [(ngModel)]="livro.category"><hr>
+    <input for="status">Status do livro: </input><input type="text" name="status" placeholder="Informe o status" [(ngModel)]="livro.status"><hr>
+    <input for="edit">Editora do livro: </input><input type="text" name="edit" placeholder="Informe a editora" [(ngModel)]="livro.edit"><hr>
+    <button (click)="save()">Criar</button>
+    <button (click)="cancel()">Voltar</button>
+</div>
+<button *ngIf="!livro" (click)="create()">Novo</button>
