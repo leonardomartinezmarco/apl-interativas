@@ -7,8 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class Ex1Component implements OnInit {
 
-  nome = 'Emerson';
-  sobrenome = 'Costa';
+  nome = 'Leonardo';
+  sobrenome = 'Martinez';
 
   constructor() { }
 
