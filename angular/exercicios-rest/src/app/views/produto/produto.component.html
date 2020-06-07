@@ -1,0 +1,28 @@
+<button (click)="listarProdutos();" class="btn btn-primary btn-sm">Listar Todos Produtos</button>
+
+<div *ngIf="produtos">
+    <table>
+        <thead>
+            <tr>
+                <th>Nome do produto</th>
+                <th>Estoque do produto</th>
+                <th>Descrição do produto</th>
+                <th>Categoria do produto</th>
+                <th>Ativo do produto</th>
+                <th>Preço do produto</th>
+                <th>Desconto do produto</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let produto of produtos">
+                <th>{{produto.produto_name}}</th>
+                <th>{{produto.estoque_qnt}}</th>
+                <th>{{produto.produto_descricao}}</th>
+                <th>{{produto.categoria_id}}</th>
+                <th>{{produto.produto_ativo}}</th>
+                <th>{{produto.produto_preco}}</th>
+                <th>{{produto.promocao}}</th>
+            </tr>
+        </tbody>
+    </table>
+</div>
